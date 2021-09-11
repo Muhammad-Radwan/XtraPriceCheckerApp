@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:entry1="clr-namespace:XtraPriceCheckerApp.Views"
+             x:Class="XtraPriceCheckerApp.Views.PriceCheckerView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Entry Unfocused="Entry1_Unfocused" Grid.Column="1" Grid.Row="0" Completed="Entry1_Completed" InputTransparent="False" Keyboard="Numeric" x:Name="Entry1" Placeholder="أدخل باركود الصنف"/>
+                        <Image Grid.Column="0" Grid.Row="0" Source="LogoM.png"/>
+                    </Grid>
+                <StackLayout>
+                    <Label Text="اسم الصنف:"/>
+                    <Label FontSize="70"  x:Name="LBLProductName" HorizontalOptions="Center"/>
+                    <Label Text="السعر:"/>
+                    <Label x:Name="LBLPrice" FontSize="120"  HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+            <!--<Button Text="IP Configuration" x:Name="Settings" Clicked="Settings_Clicked"/>-->
+            <Label VerticalOptions="End"  HorizontalTextAlignment="Center" TextColor="#007ACC" Text="برمجة: محمد رضوان - 0910184901 - جميع الحقوق محفوظة لشركة بيت الخبراء - العنوان: سيدي حسين"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage FlowDirection="RightToLeft" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XtraPriceCheckerApp.Views.SetingsView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="عنوان IP:"/>
+            <Entry x:Name="IPSetting" Keyboard="Url"/>
+            <Label Text="رقم المنفذ:"/>
+            <Entry x:Name="PortSetting" Keyboard="Numeric"/>
+            <Label Text="اسم النشاط:"/>
+            <Entry x:Name="ShopName"/>
+           
+            <Button x:Name="btnSave" Text="حفظ الإعدادات" Clicked="btnSave_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

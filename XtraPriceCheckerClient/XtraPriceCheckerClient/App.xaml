@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XtraPriceCheckerClient.App">
+    <Application.Resources>
+        <Color x:Key="Accent">#007ACC</Color>
+        <OnPlatform x:TypeArguments="x:String" x:Key="MyFont">
+            <On Platform="Android" Value="Cairo-Regular.ttf#Cairo-Regular"/>
+        </OnPlatform>
+        <Style TargetType="StackLayout">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BackgroundColor" Value="#1E1E1E"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="FontFamily" Value="{StaticResource MyFont}"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{StaticResource MyFont}"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="PlaceholderColor" Value="White"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="Body"/>
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="FontFamily" Value="{StaticResource MyFont}"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#007ACC"/>
+        </Style>
+    </Application.Resources>
+</Application>
